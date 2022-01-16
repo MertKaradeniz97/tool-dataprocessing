@@ -23,11 +23,11 @@ for file in pbar(all_files):
             if tas=="":
                 continue
             else:    
-                tassak=tas+" "
-                result=lines.find(tassak)
+                tas_string=tas+" "
+                result=lines.find(tas_string)
                         
                 if result>0:
-                    paket=tassak.strip()
+                    paket=tas_string.strip()
                     icerikfile.append(paket)
     if len(icerikfile)<=3:
         continue
